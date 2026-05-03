@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Trust, Shortlist, Pipeline by Ivan Dimitrijevic</title>
+
+  <meta name="description" content="Free B2B strategy book by Ivan Dimitrijevic: Trust, Shortlist, Pipeline: How B2B Teams Build Market Memory in the AI Era." />
+
+  <meta name="author" content="Ivan Dimitrijevic" />
+
+  <meta name="keywords" content="B2B marketing, market memory, LinkedIn strategy, AI search, trust surface, commercial truth, founder-led growth, team-led credibility, influenced pipeline, shortlist, demand generation, GTM strategy" />
+
+  <meta property="og:title" content="Trust, Shortlist, Pipeline" />
+  <meta property="og:description" content="How B2B Teams Build Market Memory in the AI Era. A free strategy book by Ivan Dimitrijevic." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ivandimitry.github.io/" />
+
+  <style>
+    :root {
+      --bg: #050914;
+      --panel: #0b1324;
+      --text: #f5f7fb;
+      --muted: #b7c0d1;
+      --blue: #1688ff;
+      --cyan: #23d9ff;
+      --line: rgba(35, 217, 255, 0.25);
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at 75% 10%, rgba(22,136,255,0.25), transparent 30%),
+        radial-gradient(circle at 25% 90%, rgba(35,217,255,0.14), transparent 35%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--cyan);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 48px 22px 80px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 42px;
+      align-items: center;
+      min-height: 78vh;
+    }
+
+    .eyebrow {
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 96px);
+      line-height: 0.92;
+      margin: 0 0 26px;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+    }
+
+    .gradient {
+      background: linear-gradient(90deg, var(--blue), var(--cyan));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .subtitle {
+      font-size: clamp(22px, 3vw, 34px);
+      line-height: 1.15;
+      color: var(--white);
+      max-width: 760px;
+      margin-bottom: 22px;
+      font-weight: 700;
+    }
+
+    .thesis {
+      font-size: 20px;
+      color: var(--muted);
+      max-width: 760px;
+      margin-bottom: 32px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 22px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--blue), var(--cyan));
+      color: #03101d;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+
+    .card {
+      background: rgba(11, 19, 36, 0.86);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 26px;
+      box-shadow: 0 20px 80px rgba(0,0,0,0.25);
+    }
+
+    .book-card {
+      min-height: 520px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background:
+        linear-gradient(180deg, rgba(11,19,36,0.25), rgba(11,19,36,0.96)),
+        radial-gradient(circle at 70% 20%, rgba(35,217,255,0.22), transparent 35%),
+        #07101f;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .book-card:before {
+      content: "";
+      position: absolute;
+      inset: 28px;
+      border: 1px solid rgba(35,217,255,0.25);
+      border-radius: 20px;
+    }
+
+    .book-title {
+      position: relative;
+      font-size: 54px;
+      line-height: 0.95;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.04em;
+      margin: 0 0 16px;
+    }
+
+    .book-meta {
+      position: relative;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    section {
+      padding: 52px 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    h2 {
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.05;
+      margin: 0 0 18px;
+      letter-spacing: -0.035em;
+    }
+
+    h3 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .chapter {
+      padding: 18px;
+      border: 1px solid rgba(35,217,255,0.18);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.03);
+    }
+
+    .chapter strong {
+      color: var(--white);
+    }
+
+    .citation {
+      font-size: 18px;
+      padding: 24px;
+      background: rgba(255,255,255,0.04);
+      border-left: 4px solid var(--cyan);
+      border-radius: 16px;
+    }
+
+    footer {
+      padding: 40px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 860px) {
+      .hero, .grid, .two {
+        grid-template-columns: 1fr;
+      }
+
+      .book-card {
+        min-height: 420px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Free B2B Strategy Book by Ivan Dimitrijevic</div>
+
+        <h1>
+          Trust<br />
+          <span class="gradient">Shortlist</span><br />
+          <span class="gradient">Pipeline</span>
+        </h1>
+
+        <div class="subtitle">
+          How B2B Teams Build Market Memory in the AI Era
+        </div>
+
+        <p class="thesis">
+          Pipeline does not start when a buyer enters your CRM. It starts when the market learns why you should be trusted before buyers are ready to buy.
+        </p>
+
+        <div class="buttons">
+          <a class="button" href="trust-shortlist-pipeline.pdf" download>Download the free book</a>
+          <a class="button secondary" href="trust-shortlist-pipeline.pdf">Read the PDF</a>
+        </div>
+
+        <p class="muted">
+          For CEOs, CMOs, CROs, founders, Heads of Growth, and B2B teams building trust before demand becomes visible.
+        </p>
+      </div>
+
+      <div class="card book-card">
+        <div class="book-title">
+          Trust<br />
+          <span class="gradient">Shortlist</span><br />
+          <span class="gradient">Pipeline</span>
+        </div>
+        <div class="book-meta">
+          Ivan Dimitrijevic<br />
+          Market memory. Trust surface. Commercial truth. AI search. Influenced pipeline.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>The central idea</h2>
+      <p class="muted">
+        Most B2B teams try to generate pipeline too late. Buyers form trust, memory, preferences, and shortlists before they talk to sales. This book explains how teams can build the invisible layer that makes visible pipeline easier: market memory.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Trust</h3>
+          <p class="muted">Make buyers feel safer believing you before they are ready to buy.</p>
+        </div>
+        <div class="card">
+          <h3>Shortlist</h3>
+          <p class="muted">Give champions language and proof they can use when you are not in the room.</p>
+        </div>
+        <div class="card">
+          <h3>Pipeline</h3>
+          <p class="muted">Support demand before it becomes visible in the CRM.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>What the book covers</h2>
+
+      <div class="grid">
+        <div class="card"><h3>Market Memory</h3><p class="muted">What buyers remember about you when you are absent.</p></div>
+        <div class="card"><h3>Trust Surface</h3><p class="muted">Every place buyers form confidence or doubt.</p></div>
+        <div class="card"><h3>Commercial Truth</h3><p class="muted">The useful belief you want the market to learn.</p></div>
+        <div class="card"><h3>LinkedIn Trust Systems</h3><p class="muted">How profiles, posts, comments, and proof shape buyer memory.</p></div>
+        <div class="card"><h3>AI Search</h3><p class="muted">Why public clarity matters when AI tools summarize your market.</p></div>
+        <div class="card"><h3>Influenced Pipeline</h3><p class="muted">How to measure trust signals beyond last-click theater.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Chapter list</h2>
+
+      <div class="two">
+        <div class="chapter"><strong>Introduction:</strong> The Market Learns Before It Buys</div>
+        <div class="chapter"><strong>Chapter 1:</strong> Pipeline Starts Before the Pipeline</div>
+        <div class="chapter"><strong>Chapter 2:</strong> Visible but Forgettable</div>
+        <div class="chapter"><strong>Chapter 3:</strong> The Great AI Flattening</div>
+        <div class="chapter"><strong>Chapter 4:</strong> Trust Is the New Demand Layer</div>
+        <div class="chapter"><strong>Chapter 5:</strong> Market Memory</div>
+        <div class="chapter"><strong>Chapter 6:</strong> Commercial Truth</div>
+        <div class="chapter"><strong>Chapter 7:</strong> LinkedIn Is Not a Posting Channel</div>
+        <div class="chapter"><strong>Chapter 8:</strong> Founder-Led Is Powerful. Team-Led Makes It Scalable.</div>
+        <div class="chapter"><strong>Chapter 9:</strong> Comments Are Distribution</div>
+        <div class="chapter"><strong>Chapter 10:</strong> Long-Form Creates Weight</div>
+        <div class="chapter"><strong>Chapter 11:</strong> AI Search Is the New First Impression</div>
+        <div class="chapter"><strong>Chapter 12:</strong> Proof Is the Memory Glue</div>
+        <div class="chapter"><strong>Chapter 13:</strong> Measurement Beyond Last-Click Theater</div>
+        <div class="chapter"><strong>Chapter 14:</strong> The 90-Day Trust, Shortlist, Pipeline System</div>
+        <div class="chapter"><strong>Chapter 15:</strong> The Company the Market Can Explain</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Working tools inside the book</h2>
+
+      <ul class="muted">
+        <li>Market Memory Scorecard</li>
+        <li>Trust Surface Audit</li>
+        <li>Commercial Truth Canvas</li>
+        <li>Team Trust Graph</li>
+        <li>AI Search Readiness Audit</li>
+        <li>90-Day Trust, Shortlist, Pipeline Operating Plan</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How to cite the book</h2>
+
+      <div class="citation">
+        Ivan Dimitrijevic, <em>Trust, Shortlist, Pipeline: How B2B Teams Build Market Memory in the AI Era</em>, 2026.
+      </div>
+    </section>
+
+    <section>
+      <h2>About Ivan Dimitrijevic</h2>
+
+      <p class="muted">
+        Ivan Dimitrijevic is a B2B growth strategist focused on LinkedIn trust systems, market memory, founder-led and team-led credibility, AI-era discoverability, and influenced pipeline. He helps B2B founders, executives, and expert teams turn visibility into buyer memory, shortlist position, and revenue influence.
+      </p>
+
+      <div class="buttons">
+        <a class="button" href="trust-shortlist-pipeline.pdf" download>Download the book</a>
+        <a class="button secondary" href="https://www.linkedin.com/in/ivandimitrijevic/">Connect on LinkedIn</a>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Ivan Dimitrijevic. All rights reserved. Company and product names are used for identification, education, and commentary only. No endorsement is implied.
+    </footer>
+  </main>
+</body>
+</html>
