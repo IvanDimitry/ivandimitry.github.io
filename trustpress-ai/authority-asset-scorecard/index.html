@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Authority Asset Scorecard</title>
+  <meta name="description" content="A diagnostic scorecard for deciding whether raw expert knowledge is ready to become an authority asset.">
+  <link rel="canonical" href="https://ivandimitry.github.io/trustpress-ai/authority-asset-scorecard/">
+  <meta property="og:title" content="Authority Asset Scorecard">
+  <meta property="og:description" content="A diagnostic scorecard for deciding whether raw expert knowledge is ready to become an authority asset.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ivandimitry.github.io/trustpress-ai/authority-asset-scorecard/">
+  <meta property="og:image" content="https://ivandimitry.github.io/trustpress-ai/assets/images/cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="https://ivandimitry.github.io/trustpress-ai/assets/css/styles.css">
+  
+</head>
+<body>
+<nav class="nav"><div class="container nav-inner"><a class="brand" href="https://ivandimitry.github.io/trustpress-ai/">TrustPress <span>AI</span></a><div class="nav-links"><a href="https://ivandimitry.github.io/trustpress-ai/the-authority-asset/">Book</a><a href="https://ivandimitry.github.io/trustpress-ai/the-authority-asset-visuals/">Visuals</a><a href="https://ivandimitry.github.io/trustpress-ai/authority-asset-scorecard/">Scorecard</a><a href="https://ivandimitry.github.io/trustpress-ai/the-authority-asset-sources/">Sources</a><a href="https://ivandimitry.github.io/trustpress-ai/authority-asset-glossary/">Glossary</a></div></div></nav>
+
+<div class="container breadcrumb"><a href="https://ivandimitry.github.io/trustpress-ai/the-authority-asset/">The Authority Asset</a> / Scorecard</div>
+<header class="hero"><div class="container"><div class="eyebrow">Authority Asset Scorecard</div><h1>Diagnose the gap before you build the <span class="gold">asset.</span></h1><p class="lede">Use this quick scorecard to decide whether your raw knowledge is ready for a book, executive edition, visual system, authority audit, or monthly authority engine.</p></div></header>
+<section class="section"><div class="container grid-2"><div class="card"><div class="score-grid"><div class="score-row"><div><label>1. Thesis clarity</label><small>Is the core idea clear, specific, and worth building around?</small></div><select class="score"><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option><option value="4">4</option><option value="5">5</option></select></div><div class="score-row"><div><label>2. Proof strength</label><small>Do you have credible evidence, examples, experience, or results?</small></div><select class="score"><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option><option value="4">4</option><option value="5">5</option></select></div><div class="score-row"><div><label>3. Archive depth</label><small>Is there enough raw material to build from?</small></div><select class="score"><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option><option value="4">4</option><option value="5">5</option></select></div><div class="score-row"><div><label>4. Voice clarity</label><small>Is the point of view distinct, relatable, and ownable?</small></div><select class="score"><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option><option value="4">4</option><option value="5">5</option></select></div><div class="score-row"><div><label>5. Visual potential</label><small>Can key ideas become useful diagrams, scorecards, or frameworks?</small></div><select class="score"><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option><option value="4">4</option><option value="5">5</option></select></div><div class="score-row"><div><label>6. Distribution readiness</label><small>Do you have channels and a reason to repeat the idea?</small></div><select class="score"><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option><option value="4">4</option><option value="5">5</option></select></div><div class="score-row"><div><label>7. Market memory</label><small>Is this something the market needs to remember?</small></div><select class="score"><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option><option value="4">4</option><option value="5">5</option></select></div><div class="score-row"><div><label>8. Commercial fit</label><small>Does the asset naturally support a real offer or sales conversation?</small></div><select class="score"><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option><option value="4">4</option><option value="5">5</option></select></div></div></div><div class="card gold-border"><h2 id="scoreTotal">0/40</h2><h3 id="scoreVerdict">Calculating…</h3><p id="scoreNote" class="muted"></p><hr style="border-color:rgba(255,255,255,.12)"><p><strong>Rule:</strong> Sometimes the right answer is not to write the book yet.</p><div class="btn-row"><a class="btn primary" href="https://ivandimitry.github.io/trustpress-ai/assets/docs/the-authority-asset.pdf">Read the book</a><a class="btn" href="https://ivandimitry.github.io/trustpress-ai/the-authority-asset-sources/">See the source notes</a></div></div></div></section>
+<script>
+function calcScore(){
+  const vals=[...document.querySelectorAll('.score')].map(s=>Number(s.value));
+  const total=vals.reduce((a,b)=>a+b,0);
+  let verdict='Not a book yet'; let note='The foundation needs work. Reframe the idea, deepen proof, or build a smaller asset first.';
+  if(total>=34){verdict='Ready to build'; note='Strong enough across key areas to begin a serious authority asset project.';}
+  else if(total>=25){verdict='High potential, fix gaps first'; note='The raw material exists, but the weakest areas should be closed before full production.';}
+  document.getElementById('scoreTotal').textContent=total+'/40';
+  document.getElementById('scoreVerdict').textContent=verdict;
+  document.getElementById('scoreNote').textContent=note;
+}
+document.addEventListener('change', calcScore); window.addEventListener('load', calcScore);
+</script>
+
+
+<footer class="footer"><div class="container"><p><strong>The Authority Asset</strong> is a TrustPress AI proof-of-concept by Ivan Dimitrijevic and Nataša Dimitrijevic.</p><p><a href="https://ivandimitry.github.io/trustpress-ai/">TrustPress AI</a> · <a href="https://ivandimitry.github.io/trustpress-ai/the-authority-asset/">Book</a> · <a href="https://ivandimitry.github.io/trustpress-ai/the-authority-asset-sources/">Sources</a> · <a href="https://ivandimitry.github.io/">Ivan's public authority library</a></p></div></footer>
+</body>
+</html>
